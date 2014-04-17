@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<database name="default"
+  namespace="Wj\CarShopBundle\Model"
+  defaultIdMethod="native"
+>
+    <table name="cars" phpName="Car">
+        <column name="id"
+            type="integer"
+            required="true"
+            primaryKey="true"
+            autoIncrement="true"
+        />
+        <column name="type"
+            type="varchar"
+            primaryString="true"
+            size="100"
+        />
+        <column name="price"
+            type="decimal"
+        />
+        <column name="description"
+            type="longvarchar"
+        />
+        <foreign-key foreignTable="reviews">
+            <reference local="review_id" foreign="id" />
+        </foreign-key>
+    </table>
+</database>

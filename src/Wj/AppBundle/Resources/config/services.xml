@@ -1,0 +1,17 @@
+<?xml version="1.0" ?>
+
+<container xmlns="http://symfony.com/schema/dic/services"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
+
+    <parameters>
+        <parameter key="wj_app.component.welcome.class">Wj\AppBundle\Component\Welcome</parameter>
+    </parameters>
+
+    <services>
+        <service id="wj_app.component.welcome" class="%wj_app.component.welcome.class%"
+            parent="wj_move.component">
+            <tag name="wj_move.component" alias="welcome" />
+        </service>
+    </services>
+</container>

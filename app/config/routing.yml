@@ -1,0 +1,12 @@
+wj_car_shop:
+    resource: "@WjCarShopBundle/Resources/config/routing.xml"
+    prefix:   /
+
+wj_app:
+    resource: "@WjAppBundle/Resources/config/routing.xml"
+    prefix:   /
+
+wj_dealer:
+    resource: "@WjDealerBundle/Resources/config/routing.xml"
+    prefix:   /
+

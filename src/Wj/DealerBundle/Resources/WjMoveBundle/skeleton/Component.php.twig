@@ -1,0 +1,24 @@
+<?php
+
+namespace {{ namespace }};
+
+/**
+ * @author Wouter J <wouter@wouterj.nl>
+ */
+class {{ class }} extends Component
+{
+    public function __construct($templating)
+    {
+        parent::__construct($templating);
+        $component = $this;
+
+        $this->on('component.initialize', function () use ($component) {
+            $component->on('component.requested', 'getComponent');
+        });
+    }
+
+    public function getComponent(GenericEvent $event)
+    {
+        // ...
+    }
+}

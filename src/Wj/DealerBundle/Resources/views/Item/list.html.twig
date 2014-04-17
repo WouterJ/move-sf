@@ -1,0 +1,8 @@
+<ul>
+{% for item in items %}
+    <li>
+        <h1><a href="{{ path('item_show', {'id': item.id}) }}">{{ item.type }}</a></h1>
+        <p>{{ item.description }}</p>
+    </li>
+{% endfor %}
+</ul>

@@ -1,0 +1,8 @@
+<ul>
+{% for review in reviews %}
+    <li>
+        <address>{{ review.author }}</address>
+        <p>{{ review.body }}</p>
+    </li>
+{% endfor %}
+</ul>

@@ -1,0 +1,7 @@
+{% extends '::base.html.twig' %}
+
+{% block body %}
+    {{ component('item_info', {id: id}) }}
+
+    {{ component('review_list', {item_id: id}) }}
+{% endblock %}

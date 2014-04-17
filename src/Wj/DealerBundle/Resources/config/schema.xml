@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<database name="default"
+  namespace="Wj\DealerBundle\Model"
+  defaultIdMethod="native"
+>
+    <table name="reviews" phpName="Review">
+        <column name="id"
+            type="integer"
+            required="true"
+            primaryKey="true"
+            autoIncrement="true"
+        />
+        <column name="author"
+            type="varchar"
+            primaryString="true"
+            size="100"
+        />
+        <column name="content"
+            type="longvarchar"
+        />
+        <behavior name="timestampable">
+            <parameter name="disable_updated_at" value="true" />
+        </behavior>
+    </table>
+</database>

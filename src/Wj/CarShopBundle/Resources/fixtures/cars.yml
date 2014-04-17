@@ -1,0 +1,10 @@
+Wj\CarShopBundle\Model\Car:
+    peugot_sr1:
+        type: Peugot SR1
+        price: 30000
+        description: The Peugeot SR1 is a convertible, hybrid concept car by Peugeot.
+
+    kia_gt4:
+        type: Kia GT4
+        price: 20000
+        description: It's not coming soon, it's coming now.
